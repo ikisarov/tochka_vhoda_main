@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>Мой 2026 в книгах</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <div class="stage">
+    <div class="phone">
+      <header class="top-bar" aria-label="Поиск и разделы магазина">
+        <img class="screen-image" data-src="./img/top-bar.png" width="393" height="156" alt="Поиск и разделы магазина" hidden>
+      </header>
+
+      <main id="content" class="content" tabindex="0" aria-label="Лента книжного магазина">
+        <div class="feed">
+          <img class="screen-image" data-src="./img/content.png" alt="Рекомендации и подборки книг" draggable="false" hidden>
+        </div>
+      </main>
+
+      <aside class="banner" data-compact="false" aria-label="Мой 2026 в книгах">
+        <div class="banner__clip" aria-hidden="true">
+          <div class="banner__art">
+            <canvas class="banner__animation" width="361" height="52" data-lottie="./img/banner-image-animation.lottie"></canvas>
+          </div>
+        </div>
+        <div class="banner__chapter" aria-hidden="true">
+          <canvas class="banner__animation" width="96" height="102" data-lottie="./img/list-container.lottie"></canvas>
+        </div>
+      </aside>
+
+      <footer class="bottom-bar" aria-label="Нижняя панель">
+        <img class="screen-image" data-src="./img/bottom-bar.png" width="393" height="82" alt="Главная, каталог, корзина, мои книги, профиль" hidden>
+      </footer>
+    </div>
+  </div>
+  <p class="launch-note" role="status" hidden>Для проигрывания .lottie открой прототип через локальный сервер. Команда запуска есть в README.md.</p>
+  <div class="touch-cursor" aria-hidden="true" hidden></div>
+</body>
+</html>
